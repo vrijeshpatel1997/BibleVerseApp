@@ -1,0 +1,93 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title> @ViewData["Title"] - BibleVerseApp</title>
+
+
+    <link rel="stylesheet" href="~/css/reset.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="~/css/layout.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="~/css/style.css" type="text/css" media="all" />
+
+    <script type="text/javascript" src="~/js/jquery-1.4.2.js"></script>
+    <script type="text/javascript" src="~/js/cufon-yui.js"></script>
+    <script type="text/javascript" src="~/js/cufon-replace.js"></script>
+    <script type="text/javascript" src="~/js/Myriad_Pro_400.font.js"></script>
+    <script type="text/javascript" src="~/js/Myriad_Pro_italic_400.font.js"></script>
+    <script type="text/javascript" src="~/js/Myriad_Pro_italic_600.font.js"></script>
+</head>
+
+
+<body id="page1">
+    <div class="body1">
+        <div class="main">
+            
+            <header>
+
+                <div class="wrapper">
+
+                    <h1>
+                        
+
+                        <a href="index.html" id="logo"> Bible search</a> <span id="slogan"> Find your bible  verse </span>
+                    </h1>
+
+                    <div class="right">
+
+                        <nav>
+                            <ul id="top_nav">
+                                <li>  <a href="index.cshtml"><img src="~/Image/img1.gif" alt="" /> </a></li>
+                                <li>  <a href="index.cshtml"><img src="~/Image/img2.gif" alt="" /></a></li>
+                                <li class="bg_none">  <a href="index.html"><img src="~/Image/img1.gif" />
+                                    alt=""</a></li>
+                            </ul>
+
+
+
+
+                        </nav>
+
+                        <nav>
+
+                            <ul id="menu">
+                                <li id="menu_active"> <a href="index.cshtml"> Home</a></li>
+                                <li> <a href="index.cshtml"> Bible app</a></li>
+                                <li> <a href="index.cshtml"> Serach</a></li>
+                                <li> <a href="index.cshtml"> Contact us</a></li>
+                                <li> <a href="index.cshtml"> About us</a></li>
+
+                            </ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </header>
+        </div>
+    </div>
+    <div class="container">
+
+        <main role="main" class="pb-3">
+
+            @RenderBody()
+        </main>
+    </div>
+
+    <div class="body2">
+
+        <footer>
+            &copy: 20201 - Bible Verse App- <a asp-area="" asp-controller="Home" asp-action="privacy"> privacy</a>
+
+        </footer>
+
+    </div>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript">Cufon.now();</script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required:false)
+</body>
+</html>

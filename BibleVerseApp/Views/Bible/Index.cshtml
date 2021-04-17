@@ -1,0 +1,102 @@
+﻿@{
+    ViewBag.Title = "Bible Search";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+
+
+}
+
+<div  class="main">
+
+    <div id="banner">
+        <div class="text1">
+
+            SEARCH <span> your Bible </span><p> Search your favorite bible version with any keyword - then view all the matching verse selections </p>
+        </div>
+        <a href="#" class="button_top">  Order a bible online</a>
+    </div>
+</div>
+
+<div class="main">
+
+    <section id="content">
+
+
+        <article class="col-1">
+            <div class="pad_1">
+                <h2> Bible Search Guide</h2>
+
+                <form id="form_1" method="post" asp-controller="Bible" asp-action="Search">
+                    <div class="wrapper pad_bot1">
+
+                        <div class="radio">
+
+                            <input type="radio" id="OT" name="Testament" value="OT" />
+                            <label for="OT">Old Testament</label><br />
+
+
+                            <input type="radio" id="NT" name="Testament" value="NT" />
+                            <label for="NT">New Testament</label><br />
+
+
+                            <input type="radio" id="Both" name="Testament" value="Both" />
+                            <label for="Both">Both</label><br />
+
+
+                         
+
+
+
+                        </div>
+                    </div>
+
+                    <div class="wrapper">
+
+                        Bible Version: 
+
+                        <div class="bg">
+                            <select name="bibleversion" id="bibleversion">
+
+
+                                <option value="version1"> Version 1</option>
+                                <option value="version2"> Version 2</option>
+                                <option value="version3"> Version 3</option>
+
+
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="wrapper">
+
+                        Search Text:
+                        <div class="bg">
+                            <input name="text" type="text" class="input input1" value="Enter text to search"
+                                   onblur="if (this.value == '') this.value= 'Enter Text to search'"
+                                   onfocus="if (this.value == ' Enter Text to search') this.value= '"/>
+
+                     
+
+                        </div>
+                    </div>
+                    <div>
+            
+                        <a href="#" class="button2" onclick="document.getElementById('form_1').submit()"> search!</a>
+
+                    </div>
+
+                </form>
+
+
+            </div>
+        </article>
+        <article class="col2 pad_left1">
+
+            <h2> Search Results </h2>
+
+            <p class="color1"> This is just a place holdeer</p>
+        </article>
+    </section>
+
+
+
+</div>
