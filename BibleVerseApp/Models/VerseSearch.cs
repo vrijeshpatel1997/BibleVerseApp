@@ -7,9 +7,8 @@ namespace BibleVerseApp.Models
 {
     public class VerseSearch
     {
-
-        public string Testament { get; set; } 
+        public string Testament { get; set; }
         public string BibleVersion { get; set; }
-
+        public string Text { get; set; }
     }
 }

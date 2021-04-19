@@ -6,9 +6,11 @@
 
   <ItemGroup>
     <Folder Include="Helper\" />
-    <Folder Include="Services\Business\" />
-    <Folder Include="Services\DataAccess\" />
-    <Folder Include="Services\Utilities\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="5.0.2" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.2" />
   </ItemGroup>
 
 </Project>
